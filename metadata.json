@@ -1,0 +1,5 @@
+{
+  "name": "Lumion Realism Enhancer",
+  "description": "Transform Lumion CG renders into photorealistic images using Gemini 2.5 Flash Image, strictly preserving geometry and layout.",
+  "requestFramePermissions": []
+}
