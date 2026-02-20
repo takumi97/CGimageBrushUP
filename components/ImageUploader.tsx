@@ -20,15 +20,15 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageSelected })
 
   return (
     <div className="w-full max-w-2xl mx-auto">
-      <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-600 border-dashed rounded-xl cursor-pointer bg-gray-800 hover:bg-gray-750 transition-colors group">
+      <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors group">
         <div className="flex flex-col items-center justify-center pt-5 pb-6">
-          <div className="p-4 rounded-full bg-gray-700 group-hover:bg-gray-600 transition-colors mb-4">
-            <Upload className="w-8 h-8 text-gray-400 group-hover:text-blue-400" />
+          <div className="p-4 rounded-full bg-white shadow-sm group-hover:shadow-md transition-all mb-4 border border-gray-100">
+            <Upload className="w-8 h-8 text-gray-400 group-hover:text-black" />
           </div>
-          <p className="mb-2 text-sm text-gray-400">
-            <span className="font-semibold text-gray-200">Click to upload</span> or drag and drop
+          <p className="mb-2 text-sm text-gray-500">
+            <span className="font-semibold text-gray-900">Click to upload</span> or drag and drop
           </p>
-          <p className="text-xs text-gray-500">Lumion Render (PNG, JPG)</p>
+          <p className="text-xs text-gray-400">Lumion Render (PNG, JPG)</p>
         </div>
         <input 
           type="file" 

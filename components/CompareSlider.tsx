@@ -50,7 +50,7 @@ export const CompareSlider: React.FC<CompareSliderProps> = ({ beforeImage, after
   return (
     <div 
       ref={containerRef}
-      className="relative w-full aspect-video select-none overflow-hidden rounded-lg shadow-2xl border border-gray-700 bg-black"
+      className="relative w-full aspect-video select-none overflow-hidden rounded-lg shadow-sm border border-gray-200 bg-gray-100"
       onMouseDown={handleMouseDown}
       onTouchStart={handleMouseDown}
     >
@@ -77,19 +77,19 @@ export const CompareSlider: React.FC<CompareSliderProps> = ({ beforeImage, after
 
       {/* Slider Handle */}
       <div 
-        className="absolute inset-y-0 w-1 bg-white cursor-ew-resize hover:shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-shadow z-20 flex items-center justify-center"
+        className="absolute inset-y-0 w-1 bg-white cursor-ew-resize hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] transition-shadow z-20 flex items-center justify-center"
         style={{ left: `${sliderPosition}%` }}
       >
-        <div className="w-8 h-8 -ml-4 bg-white rounded-full shadow-lg flex items-center justify-center">
-            <MoveHorizontal className="w-5 h-5 text-gray-800" />
+        <div className="w-8 h-8 -ml-4 bg-white rounded-full shadow-lg border border-gray-100 flex items-center justify-center">
+            <MoveHorizontal className="w-5 h-5 text-gray-900" />
         </div>
       </div>
       
       {/* Labels */}
-      <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-md px-3 py-1 rounded text-xs font-bold text-white uppercase tracking-wider pointer-events-none">
+      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded text-xs font-bold text-gray-900 border border-gray-200 shadow-sm uppercase tracking-wider pointer-events-none">
         Original (Lumion)
       </div>
-      <div className="absolute top-4 right-4 bg-blue-600/50 backdrop-blur-md px-3 py-1 rounded text-xs font-bold text-white uppercase tracking-wider pointer-events-none">
+      <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-xs font-bold text-white border border-black/10 shadow-sm uppercase tracking-wider pointer-events-none">
         Enhanced (Gemini)
       </div>
     </div>
